@@ -95,7 +95,7 @@ We first decided to run an ols model to see how well these features can be used 
 We ran the dataset on our function to check if there is a possibility of obtaining a better model that can predict life expectancy. We obtainied the following results. Suprisingly the best model that trains well and test well is 4th order ridge regression model. It is also the one that gave us the least root mean squared error.
 
 
-<img src= https://github.com/JoeSRead/Diamonds/blob/master/Images/life.png alt="Final Output" width="1000" height="1500"/>
+<img src= https://github.com/JoeSRead/Diamonds/blob/master/Images/life.png alt="Final Output" width="1500"/>
 
 
 
