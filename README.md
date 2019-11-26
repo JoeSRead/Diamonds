@@ -53,7 +53,7 @@ This is what the first 3 rows of the dataset looks like:
 |0.21|	Premium|	E|	SI1|	59.8|	61.0|	326|	3.89|	3.84|	2.31|
 |0.23|	Good|	E|	VS1|	56.9|	65.0|	327|	4.05|	4.07|	2.31|
 
-Our main variable that we would like to predict for the sake of this project was price so we looked at its distribution and we found that it looks something like follows:
+Our main variable that we would like to predict for the sake of this project was price so we looked at its logged distribution and we found that it looks something like follows:
 
 <img src=https://github.com/JoeSRead/Diamonds/blob/master/Images/price.png alt="Distribution of Price" width="450"/>
 
