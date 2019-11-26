@@ -72,6 +72,7 @@ Once we protyped and ensured that the function works with Diamonds dataset we wa
 
 The dataset was was collected from "WHO" and the United Nations website by Deeksha Russell and Duan Wang and is now stored on [Kaggle](https://www.kaggle.com/kumarajarshi/life-expectancy-who "Kaggle"). It contains 2939 observations about different countries between the years 2000 and 2015.
 
+| columnns                                                                                      |
 |--------------------------|----------------------------------|---------------------------------|
 | Country                  | HIV\AIDS                         | Measles                         |
 | Year                     | Hepatitis B                      | BMI                             |
