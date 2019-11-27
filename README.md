@@ -107,3 +107,7 @@ Our suggestions for countries looking to increase their life expectancy is to fo
 ## Future directions
 
 The purpose of this project was to check if we can use a generalised approach to quickly find the right model for a clean dataset. We have managed to show that it works for two datsets but there is still room for improvement. For instance in future it would better if we use AIC estimates which help up compare between different models. 
+
+We could also extend our project further by selecting or not selecting interactions/polynomial features depending on whether or not the AIC/BIC decreases when adding them in. This would be very useful for slecting features of use.
+
+Future work could include ways to visualise different models performance to provide a more intuitive way of selecting between features and models.
