@@ -81,19 +81,19 @@ The dataset was was collected from "WHO" and the United Nations website by Deeks
 | Infant mortality         | GDP                              | Schooling                       |
 | Alcohol consumpton       | Population                       | Total expenditre on health      |
 
-Given the fact that our purpose with working with the dataset was to check if our model selector function can be generalised across different datasets, we were not keen to spend a lot of time tin cleaning our dataset. This was also due to time constraints for finishing the project. We therefore decided to simplly drop all null values in our dataset instead of figure out clever ways to deal with them. So after removing all the null values we were left with 1319 observations on which we ran our regression functions. 
+Given the fact that our purpose with working with the dataset was to check if our model selector function can be generalised across different datasets, we were not keen to spend a lot of time time cleaning our dataset. This was also due to time constraints for finishing the project. We therefore decided to simplly drop all null values in our dataset instead of trying to figure out clever ways to deal with them. So after removing all the null values we were left with 1319 observations on which we ran our regression functions. 
 
 <img src=https://github.com/JoeSRead/Diamonds/blob/master/Images/Life_corr.png alt="correlation matrix" width="800"/>
 
-There were many features that have multicollinearity among each other. After performing our eda we decided to settle down for 5 features in our analysis. This is what their distribution looks like.
+There were many features that have multicollinearity among each other. After performing our EDA we decided to settle down for 5 features in our analysis. This is what their distribution looks like. We can see that none of them have any strong linear releationship or correlationship with other features. The distribution of most features other than Schooling are not normal. We still decided to check how well these features can help predict life expectancy.
 
 <img src=https://github.com/JoeSRead/Diamonds/blob/master/Images/pair_plots.png alt="Pair Plots" width="800"/>
 
-We first decided to run an ols model to see how well these features can be used to predict our target variable of life expectancy. We can see that the model is good on its own giving us a adjusted r squared of 0.761. We can also see the influence of the individual features by looking at their coefficients. Not suprisingly, the only thing that has a negative effect on Life expectancy is HIV and death ratio. Suprising the impact of GDP in predicting life expectancy is quite low and schooling or education status seems to be the most important factor in predicting life expectancy.
+We first decided to run an ols model to see how well these features can be used to predict our target variable of life expectancy. We can see that the model is good on its own giving us a adjusted r squared of 0.761. We can also see the influence of the individual features by looking at their coefficients. Not suprisingly, the only thing that has a negative effect on Life expectancy is HIV and death ratio. Suprising the impact of GDP in predicting life expectancy is quite low and schooling or education status seems to be the most important factor in predicting life expectancy. Although OLS model is pretty good, it is not cross validated and so we dont know how well this model would predict test set. Also we were interested to see if there are any other models that could improve the score of 0.761.
 
 <img src=https://github.com/JoeSRead/Diamonds/blob/master/Images/Ols_results.png alt="Results for OLS Model" width="500"/>
 
-We ran the dataset on our function to check if there is a possibility of obtaining a better model that can predict life expectancy. We obtainied the following results. Suprisingly the best model that trains well and test well is 4th order ridge regression model. It is also the one that gave us the least root mean squared error.
+We ran the dataset on our function to check if there is a possibility of obtaining a better model that can predict life expectancy. We obtainied the following results. Suprisingly the best model that trains well and test well is 4th order ridge regression model. It is also the one that gave us the least root mean squared error. 
 
 
 <img src= https://github.com/JoeSRead/Diamonds/blob/master/Images/life.png alt="Final Output" width="1500"/>
@@ -103,3 +103,7 @@ We ran the dataset on our function to check if there is a possibility of obtaini
 ## Take Home Message
 
 Our suggestions for countries looking to increase their life expectancy is to focus their resources mainly towards increasing HIV awareness. Additionally, we recommend increasing promoting education and to invest more towards decreasng malnutrition.
+
+## Future directions
+
+The purpose of this project was to check if we can use a generalised approach to quickly find the right model for a clean dataset. We have managed to show that it works for two datsets but there is still room for improvement. For instance in future it would better if we use AIC estimates which help up compare between different models. 
