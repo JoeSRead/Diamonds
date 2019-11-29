@@ -3,7 +3,7 @@
 - By Joe Read and Ashray Shetty
 
 This repo contains the following files:
-- 1.index.ipynb: Contains the jupyter notebook where the 2 datasets are run, along with their ouput
+- 1. index.ipynb: Contains the jupyter notebook where the 2 datasets are run, along with their ouput
 - 2. diamonds.csv and cleaned_life_expectancy.csv: Datasets used in the notebook
 - 3. model.py: Contains raw code and functions for implemented in the notebook
 - 4. presentation.pdf: slides explaining the purpose and outcome of the project
