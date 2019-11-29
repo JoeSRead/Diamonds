@@ -3,11 +3,11 @@
 - By Joe Read and Ashray Shetty
 
 This repo contains the following files:
-index.ipynb: Contains the jupyter notebook where the 2 datasets are run, along with their ouput
-diamonds.csv and cleaned_life_expectancy.csv: Datasets used in the notebook
-model.py: Contains raw code and functions for implemented in the notebook
-presentation.pdf: slides explaining the purpose and outcome of the project
-test_notebooks: is a folder containing jupyter notebooks used during prototyping.
+- 1.index.ipynb: Contains the jupyter notebook where the 2 datasets are run, along with their ouput
+- 2. diamonds.csv and cleaned_life_expectancy.csv: Datasets used in the notebook
+- 3. model.py: Contains raw code and functions for implemented in the notebook
+- 4. presentation.pdf: slides explaining the purpose and outcome of the project
+- 5. test_notebooks: is a folder containing jupyter notebooks used during prototyping.
 
 Regression is a mathematical technique used in quantifying the relationship between a taget variable and one or more features. The first step involves estimating the impact each feature will have on the independent variable, and then tuning the coefficients to reliably predict the target variable. 
 
